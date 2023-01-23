@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Toggle</title>
+    <style>
+        /* div input{
+            display: none;
+        } */
+        div label{
+            position: relative;
+            display: block;
+            width: 100px;
+            height: 50px;
+            background: #888;
+            border-radius: 20px;
+            cursor: pointer;
+            transition:background 300ms linear;
+           
+        }
+        div label:before {
+            position: absolute;
+            top: 50px;
+            left: 5px;
+            transform: translateY(-110%);
+            content: "";
+            display: block;
+            width: 40px;
+            height: 40px;
+            background:#eee ;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: left 300ms linear;
+            
+            
+        } 
+        div input:checked + label{
+            background:blue
+        }
+        div input:checked + label:before{
+            left: 100px;
+
+        }
+        div  input:checked + label{
+            background:blue
+        }
+
+
+    </style>
+</head>
+<body>
+    <div >
+        <label for=="toggle-btn-1"></label>
+        <input type="checkbox" id="toggle-btn-1"/>
+
+    </div>
+    
+</body>
+</html>
